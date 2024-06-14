@@ -10,7 +10,7 @@
 	
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://10.0.20.64:3306/javacore" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:/localhost:3306/dbname" />
 			<property name="javax.persistence.jdbc.user" value="adminuser" />
 			<property name="javax.persistence.jdbc.password" value="password" />
 		
