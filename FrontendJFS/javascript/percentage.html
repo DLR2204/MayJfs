@@ -1,0 +1,67 @@
+<html>
+<script>
+
+function perCal()
+
+
+{
+		
+document.getElementById("perc").value=((document.getElementById("om").value/document.getElementById("mm").value)*100);
+
+var percentage = document.getElementById("perc").value;
+
+var gpa;
+
+switch(Math.floor(percentage/10)){
+{
+
+	case 9 : gpa="excellent";
+		break;
+	
+	case 8: gpa="very good";
+		break;
+
+	case 7 : gpa="good";
+		break;
+	
+	case 6: gpa="average";
+		break;
+
+
+	case 5 :gpa="improve well";
+		break;
+	
+	case 4:gpa="poor";
+		break;
+	case 3 :gpa="very poor";
+		break;
+	
+	default:gpa="fail";
+		break;}
+
+document.getElementById("grade").value=gpa;
+
+
+}
+
+</script>
+
+<body>
+
+<h2>Enter your max marks:-<input type="text" id="mm"></h2>
+
+<h2>Enter your obtained marks:-<input type="text" id="om"></h2>
+
+
+<button type="button" onclick=perCal()>check</button>
+
+<center>
+
+Percentage:- <input type="text" id="perc">
+
+Grade:- <input type="text" id="grade">
+</center>
+
+</body>
+
+</html>
